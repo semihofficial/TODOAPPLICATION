@@ -1,13 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Suspense } from "react";
+import ErrorBoundary from "@/components/ErrorBoundary";
+import TodoList from "@/components/TodoList";
+import { Loader2 } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <main className="min-h-screen bg-background">
+      <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-12">
+        <ErrorBoundary>
+          <Suspense
+            fallback={
+              <div className="flex items-center justify-center py-20">
+                <Loader2 className="h-6 w-6 animate-spin text-primary" aria-label="Loading" />
+              </div>
+            }
+          >
+            <TodoList />
+          </Suspense>
+        </ErrorBoundary>
       </div>
-    </div>
+    </main>
   );
 };
 
