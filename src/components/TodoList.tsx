@@ -12,7 +12,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 type FilterStatus = "all" | "completed" | "incomplete";
 
-
 function TodoListSkeleton() {
   return (
     <div className="space-y-3">
