@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Bomb } from "lucide-react";
 import { useState } from "react";
 
+
 export default function ErrorTestPage() {
   const [shouldError, setShouldError] = useState(false);
 
