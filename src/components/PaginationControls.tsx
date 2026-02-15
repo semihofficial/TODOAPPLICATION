@@ -9,6 +9,7 @@ interface PaginationControlsProps {
   total?: number;
 }
 
+
 export default function PaginationControls({
   page,
   hasNext,
