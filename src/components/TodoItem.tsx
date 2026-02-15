@@ -9,6 +9,7 @@ interface TodoItemProps {
   index: number;
 }
 
+
 const priorityStyles: Record<string, string> = {
   HIGH: "border-l-destructive",
   MEDIUM: "border-l-accent",
