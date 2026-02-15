@@ -3,7 +3,6 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import TodoList from "@/components/TodoList";
 import { Loader2 } from "lucide-react";
 
-
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
