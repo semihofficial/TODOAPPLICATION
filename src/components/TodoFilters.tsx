@@ -11,6 +11,7 @@ interface TodoFiltersProps {
   onFilterChange: (value: FilterStatus) => void;
 }
 
+
 const filters: { label: string; value: FilterStatus }[] = [
   { label: "All", value: "all" },
   { label: "Complete", value: "completed" },
